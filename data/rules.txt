@@ -3,4 +3,4 @@
 
 //@include <OWL>.
 
-[rule1: (?molecule ns:type ns:Molécule) (?atome rdf:type ns:Atome) (?molecule ns:est_composée_de ?atome) -> (?atome ns:est_present_dans ?molécule)]
+[rule1: (?molecule ns:est_composée_de ?atome) -> (?atome ns:est_présent_dans ?molecule)]
