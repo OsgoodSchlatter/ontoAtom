@@ -371,6 +371,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Dioxygène">
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dioxygene</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O2</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -405,6 +406,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Hydrogène"/>
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">monoxyde_de_dihydrogene</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H20</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -433,6 +435,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Sodium"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydroxyde_de_sodium</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NaOH</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -691,6 +694,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Carbone"/>
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dioxyde_de_carbone</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CO2</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -735,6 +739,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Lithium"/>
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hydroxyde_de_lithium</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LiOH</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -782,6 +787,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
         <untitled-ontology-10:famille>amide</untitled-ontology-10:famille>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methanamide</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CH3NO</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -804,6 +810,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#calcium"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxyde_de_calcium</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CaO</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -818,6 +825,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Hydrogène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
         <untitled-ontology-10:famille>amine</untitled-ontology-10:famille>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ethylamine</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2H7N</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
     
@@ -832,6 +840,7 @@
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Hydrogène"/>
         <untitled-ontology-10:est_composée_de rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Oxygène"/>
         <untitled-ontology-10:corps_pur rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-10:corps_pur>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propanoate_d_ethyle</untitled-ontology-10:nom>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C5H10O2</untitled-ontology-10:symbole>
     </owl:NamedIndividual>
 </rdf:RDF>
