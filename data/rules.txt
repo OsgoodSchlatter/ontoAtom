@@ -1,4 +1,4 @@
-@prefix ns: <http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#>.
+@prefix ns:<http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 
 //@include <OWL>.
