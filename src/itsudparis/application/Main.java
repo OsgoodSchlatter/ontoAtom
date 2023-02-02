@@ -193,7 +193,7 @@ public static void main(String[] args) throws IOException, InterruptedException 
 
 
 				Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
-				System.out.println("Select a request number:\n 1 - Select one atom in particular \n 2 - Select all atoms \n 3 - Select all atoms whose atomic number is > 10\n 4 - Select atoms present in chosen molecule 5 - Atoms that start with H \n 6 - Select molecules and atoms in these molecules \n 7 - Select chemical families   ");
+				System.out.println("Select a request number:\n 1 - Select one atom in particular \n 2 - Select all atoms \n 3 - Select all atoms whose atomic number is > 10\n 4 - Select atoms present in chosen molecule \n 5 - Atoms that start with H \n 6 - Select molecules and atoms in these molecules \n 7 - Select chemical families   ");
 
 
 				System.out.print("Enter choice of query: ");
