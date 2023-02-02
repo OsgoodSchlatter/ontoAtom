@@ -1,0 +1,6 @@
+@prefix ns: <http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+//@include <OWL>.
+
+[rule1: (?molecule ns:type ns:Molécule) (?atome rdf:type ns:Atome) (?molecule ns:est_composée_de ?atome) -> (?atome ns:est_present_dans ?molécule)]

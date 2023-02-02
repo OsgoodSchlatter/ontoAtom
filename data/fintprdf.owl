@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#"
+     xml:base="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:family="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isBrotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isBrotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSiblingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isChildOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isChildOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isDaughterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isDaughterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isChildOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isMarriedWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isMarriedWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSiblingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSisterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSisterOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSiblingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSonOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSonOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isChildOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#age">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#nationality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Aunt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Aunt">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Brother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Brother">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isBrotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sibling"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sister"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Child">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isChildOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Daughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Daughter">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isDaughterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Son"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Father -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Father">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Mother"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandfather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandfather">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isFatherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandparents"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandmother"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandmother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandmother">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandparents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandparents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Grandparents">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Mother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Mother">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isMotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isParentOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sibling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sibling">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSiblingOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sister">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSisterOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sibling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Son">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isSonOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Person"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Child"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Uncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Uncle">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#isBrotherOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Parent"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Alex -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Alex">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</age>
+        <name>Alex</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Chloe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Chloe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <isDaughterOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Marie"/>
+        <isDaughterOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</age>
+        <name>Chloe</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Claude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Claude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <isDaughterOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Marie"/>
+        <isDaughterOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</age>
+        <name>Claude</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</age>
+        <name>John</name>
+        <nationality>Italian</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Marie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Marie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">69</age>
+        <nationality>French</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Michael -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Michael">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Alex"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Thomas"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</age>
+        <name>Michael</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Paul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Paul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Pedro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Pedro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#John"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</age>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Peter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Peter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <isMarriedWith rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Marie"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</age>
+        <name>Peter</name>
+        <nationality>French</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sylvie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Sylvie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Female"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</age>
+        <name>Sylvie</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Thomas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Thomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Peter"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</age>
+        <name>Thomas</name>
+        <nationality>French</nationality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Male"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Alex"/>
+        <isSonOf rdf:resource="http://www.semanticweb.org/josh_rnd/ontologies/2023/0/family#Thomas"/>
+        <age rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</age>
+        <name>Tom</name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,1508 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10">
+    <Prefix name="" IRI="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-10" IRI="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#"/>
+    <Declaration>
+        <Class IRI="#Atome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Famille_chimique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Liaison"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Molécule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#est_composée_de"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#est_présent_dans"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#corps_pur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#famille"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longueur"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#masse_atomique"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nom"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numéro_atomique"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#polarité"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#radioactif"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#symbole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#électronégativité"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#énergie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aluminium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Amine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Argon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Azote"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bérylium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carbone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carbonyle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carboxyle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chlore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dioxygène"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ester"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fluor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#H2O"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hydroxyle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hélium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lithium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Magnésium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Néon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oxygène"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phosphore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Radium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Silicium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sodium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soufre"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Uranium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acétamide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#acétone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#aniline"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#calcium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dioxyde_de_carbone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#glucose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#méthanamide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#éthylamine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Atome"/>
+        <Class IRI="#Molécule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Molécule"/>
+        <Class IRI="#Famille_chimique"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Aluminium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Famille_chimique"/>
+        <NamedIndividual IRI="#Amide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Famille_chimique"/>
+        <NamedIndividual IRI="#Amine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Argon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Azote"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Bore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Bérylium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Famille_chimique"/>
+        <NamedIndividual IRI="#Carbonyle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Famille_chimique"/>
+        <NamedIndividual IRI="#Carboxyle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Chlore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Famille_chimique"/>
+        <NamedIndividual IRI="#Ester"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Fluor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#H2O"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Famille_chimique"/>
+        <NamedIndividual IRI="#Hydroxyle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Hélium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Lithium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Magnésium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Néon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Phosphore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Radium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Silicium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Sodium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Soufre"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#Uranium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#acétamide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#aniline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Atome"/>
+        <NamedIndividual IRI="#calcium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#dioxyde_de_carbone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#glucose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#méthanamide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#éthylamine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Molécule"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#Dioxygène"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#H2O"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#H2O"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+        <NamedIndividual IRI="#Hydroxyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+        <NamedIndividual IRI="#Sodium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+        <NamedIndividual IRI="#Carboxyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <NamedIndividual IRI="#Amide"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <NamedIndividual IRI="#Azote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#acétone"/>
+        <NamedIndividual IRI="#Carbonyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétone"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétone"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#acétone"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#aniline"/>
+        <NamedIndividual IRI="#Amine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#aniline"/>
+        <NamedIndividual IRI="#Azote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#aniline"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#aniline"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#dioxyde_de_carbone"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#dioxyde_de_carbone"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#glucose"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#glucose"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#glucose"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+        <NamedIndividual IRI="#Hydroxyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+        <NamedIndividual IRI="#Lithium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <NamedIndividual IRI="#Azote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+        <NamedIndividual IRI="#Hydroxyle"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+        <NamedIndividual IRI="#calcium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#éthylamine"/>
+        <NamedIndividual IRI="#Azote"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#éthylamine"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#éthylamine"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#appartient_à_la_famille"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+        <NamedIndividual IRI="#Ester"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+        <NamedIndividual IRI="#Carbone"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+        <NamedIndividual IRI="#Oxygène"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Aluminium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">26.98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Aluminium"/>
+        <Literal>Aluminium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Aluminium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Aluminium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Aluminium"/>
+        <Literal>Al</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Aluminium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Argon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">39.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Argon"/>
+        <Literal>Argon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Argon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">18</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Argon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Argon"/>
+        <Literal>Ar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Argon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Azote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">14.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Azote"/>
+        <Literal>Azote</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Azote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Azote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Azote"/>
+        <Literal>N</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Azote"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Bore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Bore"/>
+        <Literal>Bore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Bore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Bore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Bore"/>
+        <Literal>B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Bore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Bérylium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Bérylium"/>
+        <Literal>Bérylium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Bérylium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Bérylium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Bérylium"/>
+        <Literal>Be</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Bérylium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Carbone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">12.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Carbone"/>
+        <Literal>Carbone</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Carbone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Carbone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Carbone"/>
+        <Literal>C</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Carbone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Chlore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">35.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Chlore"/>
+        <Literal>Chlore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Chlore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Chlore"/>
+        <Literal>Cl</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Chlore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#Dioxygène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Dioxygène"/>
+        <Literal>O2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Fluor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">18.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Fluor"/>
+        <Literal>Fluor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Fluor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Fluor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Fluor"/>
+        <Literal>F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Fluor"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#H2O"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#H2O"/>
+        <Literal>Eau</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#H2O"/>
+        <Literal>H2O</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+        <Literal>Hydrogene</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+        <Literal>H</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Hydrogène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Hydroxyde_de_sodium"/>
+        <Literal>NaOH</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Hélium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Hélium"/>
+        <Literal>Hélium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Hélium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Hélium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Hélium"/>
+        <Literal>He</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Hélium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Lithium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Lithium"/>
+        <Literal>Lithium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Lithium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Lithium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Lithium"/>
+        <Literal>Li</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Lithium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.98</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Magnésium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Magnésium"/>
+        <Literal>Magnésium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Magnésium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Magnésium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Magnésium"/>
+        <Literal>Mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Magnésium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Néon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Néon"/>
+        <Literal>Néon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Néon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Néon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Néon"/>
+        <Literal>Ne</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Néon"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Oxygène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">16.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Oxygène"/>
+        <Literal>Oxygène</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Oxygène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Oxygène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Oxygène"/>
+        <Literal>O</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Oxygène"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.44</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Phosphore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">31.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Phosphore"/>
+        <Literal>Phosphore</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Phosphore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Phosphore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Phosphore"/>
+        <Literal>P</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Phosphore"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Radium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">226.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Radium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">88</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Radium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Radium"/>
+        <Literal>Ra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Radium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Silicium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Silicium"/>
+        <Literal>Silicium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Silicium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Silicium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Silicium"/>
+        <Literal>Si</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Silicium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">22.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal>Sodium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">11</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal>Na</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Sodium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.93</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Soufre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">32.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#Soufre"/>
+        <Literal>Soufre</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Soufre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Soufre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Soufre"/>
+        <Literal>S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Soufre"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.58</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#masse_atomique"/>
+        <NamedIndividual IRI="#Uranium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">238.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#Uranium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">92</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#radioactif"/>
+        <NamedIndividual IRI="#Uranium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#Uranium"/>
+        <Literal>U</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#électronégativité"/>
+        <NamedIndividual IRI="#Uranium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#acide_éthanoïque"/>
+        <Literal>CH3COOH</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#famille"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <Literal>amide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#acétamide"/>
+        <Literal>C2H5NO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#acétone"/>
+        <Literal>C3H6O</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#aniline"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#aniline"/>
+        <Literal>C6H5NH2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nom"/>
+        <NamedIndividual IRI="#calcium"/>
+        <Literal>Calcium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numéro_atomique"/>
+        <NamedIndividual IRI="#calcium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#calcium"/>
+        <Literal>Ca</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#dioxyde_de_carbone"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#dioxyde_de_carbone"/>
+        <Literal>CO2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#glucose"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#glucose"/>
+        <Literal>C6H12O6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#hydroxyde_de_lithium"/>
+        <Literal>LiOH</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#famille"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <Literal>amide</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#méthanamide"/>
+        <Literal>CH3NO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#oxyde_de_calcium"/>
+        <Literal>CaO</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#éthylamine"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#famille"/>
+        <NamedIndividual IRI="#éthylamine"/>
+        <Literal>amine</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#éthylamine"/>
+        <Literal>C2H5NH2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#corps_pur"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#symbole"/>
+        <NamedIndividual IRI="#propanoate_d&apos;éthyle"/>
+        <Literal>C5H10O2</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <ObjectProperty IRI="#est_présent_dans"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <Class IRI="#Atome"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <Class IRI="#Liaison"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#est_présent_dans"/>
+        <Class IRI="#Molécule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#est_composée_de"/>
+        <Class IRI="#Molécule"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#est_présent_dans"/>
+        <Class IRI="#Atome"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#corps_pur"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#famille"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longueur"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#masse_atomique"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nom"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#numéro_atomique"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#radioactif"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#symbole"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#électronégativité"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#énergie"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#corps_pur"/>
+        <Class IRI="#Molécule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#famille"/>
+        <Class IRI="#Atome"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longueur"/>
+        <Class IRI="#Liaison"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#masse_atomique"/>
+        <Class IRI="#Atome"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nom"/>
+        <Class IRI="#Molécule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#numéro_atomique"/>
+        <Class IRI="#Atome"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#polarité"/>
+        <Class IRI="#Molécule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#radioactif"/>
+        <Class IRI="#Molécule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#symbole"/>
+        <Class IRI="#Molécule"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#électronégativité"/>
+        <Class IRI="#Atome"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#énergie"/>
+        <Class IRI="#Liaison"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#corps_pur"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#famille"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longueur"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#masse_atomique"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nom"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#numéro_atomique"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#polarité"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#radioactif"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#symbole"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#électronégativité"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#énergie"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

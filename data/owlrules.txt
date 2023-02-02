@@ -1,0 +1,4 @@
+@prefix ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>.
+@prefix rdf: <http://www.w3.org/2002/07/owl#>.
+
+@include <OWLMicro>.
