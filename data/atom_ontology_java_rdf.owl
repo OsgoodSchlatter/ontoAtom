@@ -536,6 +536,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Radium">
         <rdf:type rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Atome"/>
         <untitled-ontology-10:masse_atomique rdf:datatype="http://www.w3.org/2001/XMLSchema#float">226.0</untitled-ontology-10:masse_atomique>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radium</untitled-ontology-10:nom>
         <untitled-ontology-10:numéro_atomique rdf:datatype="http://www.w3.org/2001/XMLSchema#int">88</untitled-ontology-10:numéro_atomique>
         <untitled-ontology-10:radioactif rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-10:radioactif>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ra</untitled-ontology-10:symbole>
@@ -591,6 +592,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Uranium">
         <rdf:type rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Atome"/>
         <untitled-ontology-10:masse_atomique rdf:datatype="http://www.w3.org/2001/XMLSchema#float">238.0</untitled-ontology-10:masse_atomique>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uranium</untitled-ontology-10:nom>
         <untitled-ontology-10:numéro_atomique rdf:datatype="http://www.w3.org/2001/XMLSchema#int">92</untitled-ontology-10:numéro_atomique>
         <untitled-ontology-10:radioactif rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-10:radioactif>
         <untitled-ontology-10:symbole rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U</untitled-ontology-10:symbole>
