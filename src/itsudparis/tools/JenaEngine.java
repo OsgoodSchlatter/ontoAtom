@@ -109,6 +109,7 @@ ResultSetFormatter.out(output, results, query);
     out = out.replace("^^<http://www.w3.org/2001/XMLSchema#","                                     <");
     out = out.replace("ￃﾨ","è");
     out = out.replace("ￃﾩ","é");
+    out = out.replace("ￃﾯ","ï");
     out = out.replace("\"","");
 
 
