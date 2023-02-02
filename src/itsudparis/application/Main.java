@@ -10,38 +10,41 @@ import com.hp.hpl.jena.rdf.model.ModelFactory;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.PropertyConfigurator;
 
+import java.io.*;
+import java.util.*;
+
+import java.lang.Thread;
+
 import com.hp.hpl.jena.rdf.model.Model;
 import itsudparis.tools.JenaEngine;
-
-import java.io.*;
-import java.util.Scanner;
 
 /**
  *
  * @author DO.ITSUDPARIS
  */
-public class  Main {
+public class Main {
+  
 
 	public static String insertNameInQuery(String query, int queryChoice){
 		System.out.println(query);
 		query = query.trim();
 		if(queryChoice == 1){
-			return
-					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>" +
-							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
-							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
-							"\n" +
-							"\n" +
-							"SELECT ?a ?num_a ?mass_a ?radioactif ?elec\n" +
-							"WHERE {\n" +
-							"?a ns:nom \"" + query+ "\".\n" +
-							"?a ns:numéro_atomique ?num_a .\n" +
-							"?a ns:masse_atomique ?mass_a .\n" +
-							"?a ns:masse_atomique ?mass_a .\n" +
-							"?a ns:radioactif ?radioactif .\n" +
-							"OPTIONAL{?a ns:électronégativité ?elec .}\n" +
+		return
+				"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>" +
+				"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" +
+				"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
+				"\n" +
+				"\n" +
+				"SELECT ?a ?num_a ?mass_a ?radioactif ?elec\n" +
+				"WHERE {\n" +
+						"?a ns:nom \"" + query+ "\".\n" +
+						"?a ns:numéro_atomique ?num_a .\n" +
+						"?a ns:masse_atomique ?mass_a .\n" +
+						"?a ns:masse_atomique ?mass_a .\n" +
+						"?a ns:radioactif ?radioactif .\n" +
+						"OPTIONAL{?a ns:électronégativité ?elec .}\n" +
 
-							"}";
+						"}";
 		}
 		else if (queryChoice == 2) {
 			return  "PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
@@ -51,12 +54,12 @@ public class  Main {
 					"\n" +
 					"SELECT ?atomes ?symbole ?nom ?masse_atomique ?numéro_atomique\n"+
 					"WHERE {\n"+
-					"?atomes rdf:type ns:Atome.\n"+
-					"?atomes ns:symbole ?symbole.\n" +
-					"OPTIONAL {?atomes ns:masse_atomique ?masse_atomique}\n" +
-					"?atomes ns:numéro_atomique ?numéro_atomique. FILTER(?numéro_atomique >=10)\n"+
-					"OPTIONAL {?atomes ns:nom ?nom}\n" +
-					"}";
+    						"?atomes rdf:type ns:Atome.\n"+
+							"?atomes ns:symbole ?symbole.\n" +
+							"OPTIONAL {?atomes ns:masse_atomique ?masse_atomique}\n" +
+     						"?atomes ns:numéro_atomique ?numéro_atomique. FILTER(?numéro_atomique >=10)\n"+
+							"OPTIONAL {?atomes ns:nom ?nom}\n" +
+							"}";
 		}
 
 		else if (queryChoice==3){
@@ -64,14 +67,14 @@ public class  Main {
 					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
 							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
 							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
-							"SELECT ?atomes ?symbole ?nom ?masse_atomique ?numéro_atomique\n" +
-							"WHERE { \n" +
-							"     ?atomes rdf:type ns:Atome.\n" +
-							"     ?atomes ns:symbole ?symbole.\n" +
-							"     OPTIONAL {?atomes ns:masse_atomique ?masse_atomique}\n" +
-							"    OPTIONAL {?atomes ns:numéro_atomique ?numéro_atomique}\n" +
-							"    OPTIONAL {?atomes ns:nom ?nom }\n" +
-							"}";
+			"SELECT ?atomes ?symbole ?nom ?masse_atomique ?numéro_atomique\n" +
+					"WHERE { \n" +
+					"     ?atomes rdf:type ns:Atome.\n" +
+					"     ?atomes ns:symbole ?symbole.\n" +
+					"     OPTIONAL {?atomes ns:masse_atomique ?masse_atomique}\n" +
+					"    OPTIONAL {?atomes ns:numéro_atomique ?numéro_atomique}\n" +
+					"    OPTIONAL {?atomes ns:nom ?nom }\n" +
+					"}";
 		} else if(queryChoice == 4){
 			return
 					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
@@ -79,13 +82,12 @@ public class  Main {
 							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
 							"\n" +
 							"\n" +
-							"SELECT ?a ?m ?symb_mol ?symb_atome\n" +
+							"SELECT ?a ?num_a\n" +
 							"WHERE {\n" +
-							//"?mol ns:nom \"" + query + "\"\n"+
-							//"?mol rdf:type ns:Liaison.\n"+
-							"?a ns:est_présent_dans ?m.\n"+
-							"?m ns:symbole ?symb_mol.\n"+
-							"?a ns:symbole ?symb_atome.\n"+
+							"?mol ns:nom \"" + query + "\"\n"+
+							"?a rdf:type ns:Atome.\n" +
+							"?a ns:est_present_dans ?mol .\n" +
+							"?a ns:numéro_atomique ?num_a .\n" +
 							"}";
 		} else if(queryChoice == 5){
 			return
@@ -100,46 +102,18 @@ public class  Main {
 							"?a ns:nom ?name.\n" +
 							"FILTER(regex(?name, \"H.*\" ))\n" +
 							"}";
-		}else if(queryChoice == 6){
-			return
-					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
-							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
-							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
-							"\n" +
-							"\n" +
-							"SELECT ?at ?famille\n" +
-							"WHERE {\n" +
-							//"?famille rdf:type ns:Famille_element.\n" +
-							//"?famille ns:nom \"non_métaux\".\n"+
-							//"?famille ns:nom ?nom.\n" +
-							//"?at rdf:type ns:Liaison.\n" +
-							"?at ns:appartient_a_la_famille_element ?famille.\n" +
-							//"?a ns:nom ?name.\n" +
-							//"FILTER(regex(?name, \"H.*\" ))\n" +
-							"}";
-		}else if(queryChoice == 7){
-			return
-					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
-							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
-							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
-							"\n" +
-							"\n" +
-							"SELECT ?x ?y ?z\n" +
-							"WHERE {\n" +
-								"?x ?y ?z .\n"+
-							"}";
 		}
 		return "";
 	}
 
 	public static void writeRulesForTable(int [] famille, String famille_name) throws IOException {
-		FileWriter writer = new FileWriter("/home/louis/csc5004/cloud-computing-infrastructures-master/JenaTest/src/data/rules.txt", true);
+		FileWriter writer = new FileWriter("/home/louis/csc5003/ontology_project/data/rules.txt", true);
 		BufferedWriter bw = new BufferedWriter(writer);
 		PrintWriter out = new PrintWriter(bw);
 
 		boolean writeLine = true;
 		for(int i=0; i< famille.length; i++){
-			File file = new File("/home/louis/csc5004/cloud-computing-infrastructures-master/JenaTest/src/data/rules.txt");
+			File file = new File("/home/louis/csc5003/ontology_project/data/rules.txt");
 
 			String s = "[rule" + famille[i] + ": (?atome rdf:type ns:Atome) (?atome ns:numéro_atomique ?num)" +
 					" (?famille ns:nom \""+famille_name+"\") equal(" + famille[i] + " ,?num) ->" +
@@ -170,22 +144,20 @@ public class  Main {
 		writer.close();
 	}
 
-	public static void main(String[] args) throws IOException, InterruptedException {
-		//on indique le chemin vers jena-log4j.properties (pour supprimer les warnings)
-		//	String log4jConfPath = "/Users/amelbouzeghoub/Documents/Enseignement/ASR2020-2021/jena10/apache-jena-2.10.0/jena-log4j.properties";
-		//	PropertyConfigurator.configure(log4jConfPath);
+public static void main(String[] args) throws IOException, InterruptedException {
+	//on indique le chemin vers jena-log4j.properties (pour supprimer les warnings)
+//	String log4jConfPath = "/Users/amelbouzeghoub/Documents/Enseignement/ASR2020-2021/jena10/apache-jena-2.10.0/jena-log4j.properties";
+//	PropertyConfigurator.configure(log4jConfPath);
+	//fin de la config log4j
 
+	int [] famille = {1,6,7,8,15,16,34};
+	writeRulesForTable(famille, "non_métaux");
 
-		int [] famille = {1,6,7,8,15,16,34};
-		writeRulesForTable(famille, "non_métaux");
-
-
-		//fin de la config log4j
-		String NS = "";
-		// lire le model a partir d'une ontologie
-		Model model = JenaEngine.readModel("data/atom_ontology_Final3.owl");
-		InfModel infModel = ModelFactory.createRDFSModel(model);
-		//infModel.remove(null, null, null);
+	String NS = "";
+	// lire le model a partir d'une ontologie
+	Model model = JenaEngine.readModel("data/atom_ontology_java_rdf.owl");
+	InfModel infModel = ModelFactory.createRDFSModel(model);
+	//infModel.remove(null, null, null);
 		while (true) {
 			if (model != null) {
 				//lire le Namespace de l’ontologie
@@ -212,24 +184,22 @@ public class  Main {
 				//myWriter.write(query);
 
 				//apply owl rules on the model
-				//Model owlInferencedModel =
-				//		JenaEngine.readInferencedModelFromRuleFile(model, "data/owlrules.txt");
+				Model owlInferencedModel =
+					JenaEngine.readInferencedModelFromRuleFile(model, "data/owlrules.txt");
 
 				// apply our rules on the owlInferencedModel
 				Model inferedModel =
-						//JenaEngine.readInferencedModelFromRuleFile(owlInferencedModel, "data/rules.txt");
-						JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
+					JenaEngine.readInferencedModelFromRuleFile(owlInferencedModel, "data/rules.txt");
 
 
 				// query on the model after inference
 				System.out.println(JenaEngine.executeQuery(inferedModel, query));
-			} else{
-				System.out.println("Error when reading model from ontology");
-			}
-			Thread.sleep(1000);
+		} else{
+			System.out.println("Error when reading model from ontology");
 		}
-
+			Thread.sleep(1000);
 	}
+	 
 }
-
+}
 
