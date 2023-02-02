@@ -46,7 +46,7 @@ public class Main {
 
 						"}";
 		}
-		else if (queryChoice == 2) {
+		else if (queryChoice == 3) {
 			return  "PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
 					"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
 					"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
@@ -62,18 +62,18 @@ public class Main {
 							"}";
 		}
 
-		else if (queryChoice==3){
+		else if (queryChoice==2){
 			return
 					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
 							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
 							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
 			"SELECT ?atomes ?symbole ?nom ?masse_atomique ?numéro_atomique\n" +
 					"WHERE { \n" +
-					"     ?atomes rdf:type ns:Atome.\n" +
-					"     ?atomes ns:symbole ?symbole.\n" +
-					"     OPTIONAL {?atomes ns:masse_atomique ?masse_atomique}\n" +
-					"    OPTIONAL {?atomes ns:numéro_atomique ?numéro_atomique}\n" +
-					"    OPTIONAL {?atomes ns:nom ?nom }\n" +
+						"?atomes rdf:type ns:Atome.\n" +
+						"?atomes ns:symbole ?symbole.\n" +
+						"OPTIONAL {?atomes ns:masse_atomique ?masse_atomique}\n" +
+						"OPTIONAL {?atomes ns:numéro_atomique ?numéro_atomique}\n" +
+						"OPTIONAL {?atomes ns:nom ?nom }\n" +
 					"}";
 		} else if(queryChoice == 4){
 			return
@@ -98,22 +98,54 @@ public class Main {
 							"\n" +
 							"SELECT ?name \n" +
 							"WHERE {\n" +
-							"?a rdf:type ns:Molécule.\n" +
+							"?a rdf:type ns:Atome.\n" +
 							"?a ns:nom ?name.\n" +
 							"FILTER(regex(?name, \"H.*\" ))\n" +
 							"}";
+		} else if(queryChoice == 6){
+			return
+					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
+							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
+							"\n" +
+							"\n" +
+							"SELECT ?a ?m ?symb_mol ?symb_atome \n" +
+							"WHERE {\n" +
+							"?a ns:est_présent_dans ?m.\n"+
+							"?m ns:symbole ?symb_mol.\n"+
+							"?a ns:symbole ?symb_atome.\n"+
+							"}";
+		}
+
+		else if(queryChoice == 7){
+			return
+					"PREFIX ns: <http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#>\n" +
+							"PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+							"PREFIX owl: <http://www.w3.org/2002/07/owl#>\n" +
+							"\n" +
+							"\n" +
+							"SELECT ?at ?famille \n" +
+							"WHERE {\n" +
+							"?at ns:appartient_a_la_famille_element ?famille.\n" +
+							"}";
 		}
 		return "";
+
+
 	}
 
 	public static void writeRulesForTable(int [] famille, String famille_name) throws IOException {
-		FileWriter writer = new FileWriter("/home/louis/csc5003/ontology_project/data/rules.txt", true);
+		String filePath = new File("").getAbsolutePath();
+		String data_location = "/data/rules.txt";
+		filePath = filePath + data_location;
+
+		FileWriter writer = new FileWriter(filePath, true);
 		BufferedWriter bw = new BufferedWriter(writer);
 		PrintWriter out = new PrintWriter(bw);
 
 		boolean writeLine = true;
 		for(int i=0; i< famille.length; i++){
-			File file = new File("/home/louis/csc5003/ontology_project/data/rules.txt");
+			File file = new File(filePath);
 
 			String s = "[rule" + famille[i] + ": (?atome rdf:type ns:Atome) (?atome ns:numéro_atomique ?num)" +
 					" (?famille ns:nom \""+famille_name+"\") equal(" + famille[i] + " ,?num) ->" +
@@ -126,14 +158,11 @@ public class Main {
 				while (scanner.hasNextLine()) {
 					String line = scanner.nextLine();
 					lineNum++;
-					//System.out.println(line+" :\n:"+s);
 					if(line.equals(s)) {
-						//System.out.println("Same line has been found");
 						writeLine = false;
 					}
 				}
 			} catch(FileNotFoundException e) {
-				//handle
 			}
 			if(writeLine){
 				out.println(s);
@@ -146,34 +175,39 @@ public class Main {
 
 public static void main(String[] args) throws IOException, InterruptedException {
 	//on indique le chemin vers jena-log4j.properties (pour supprimer les warnings)
-//	String log4jConfPath = "/Users/amelbouzeghoub/Documents/Enseignement/ASR2020-2021/jena10/apache-jena-2.10.0/jena-log4j.properties";
-//	PropertyConfigurator.configure(log4jConfPath);
-	//fin de la config log4j
 
-	int [] famille = {1,6,7,8,15,16,34};
-	writeRulesForTable(famille, "non_métaux");
+	int [] non_metaux = {1,6,7,8,15,16,34};
+	writeRulesForTable(non_metaux, "non_métaux");
+
+	int [] gaz_rares = {2,10,18};
+	writeRulesForTable(gaz_rares, "gaz_rares");
 
 	String NS = "";
 	// lire le model a partir d'une ontologie
 	Model model = JenaEngine.readModel("data/atom_ontology_java_rdf.owl");
 	InfModel infModel = ModelFactory.createRDFSModel(model);
-	//infModel.remove(null, null, null);
 		while (true) {
 			if (model != null) {
 				//lire le Namespace de l’ontologie
 				NS = model.getNsPrefixURI("");
 
-				// modifier le model
-				// Ajouter une nouvelle femme dans le modele: Nora,50, estFilleDe Peter
 
 				Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
-				System.out.print("Enter name: ");
-				String nameToSearch = sc.nextLine();
+				System.out.println("Select a request number:\n 1 - Select one atom in particular \n 2 - Select all atoms \n 3 - Select all atoms whose atomic number is > 10\n 4 - Select atoms present in chosen molecule 5 - Atoms that start with H \n 6 - Select molecules and atoms in these molecules \n 7 - Select chemical families   ");
+
 
 				System.out.print("Enter choice of query: ");
 				int choice = sc.nextInt();
 
-				//FileWriter myWriter = new FileWriter("data/query.txt");
+				Scanner sc_name = new Scanner(System.in);
+				String nameToSearch;
+				if(choice == 1 || choice == 4){
+				System.out.print("Enter name: ");
+				nameToSearch = sc_name.nextLine();
+				} else {
+				nameToSearch="";
+				}
+
 				// adding capital letter if user forgot to
 				if(!(nameToSearch.isEmpty() || nameToSearch.isEmpty())){
 					if(Character.isLowerCase(nameToSearch.charAt(0))){
@@ -181,16 +215,14 @@ public static void main(String[] args) throws IOException, InterruptedException 
 					}
 				}
 				String query = insertNameInQuery(nameToSearch,choice);
-				//myWriter.write(query);
 
 				//apply owl rules on the model
-				Model owlInferencedModel =
-					JenaEngine.readInferencedModelFromRuleFile(model, "data/owlrules.txt");
+//				Model owlInferencedModel =
+//					JenaEngine.readInferencedModelFromRuleFile(model, "data/owlrules.txt");
 
 				// apply our rules on the owlInferencedModel
 				Model inferedModel =
-					JenaEngine.readInferencedModelFromRuleFile(owlInferencedModel, "data/rules.txt");
-
+					JenaEngine.readInferencedModelFromRuleFile(model, "data/rules.txt");
 
 				// query on the model after inference
 				System.out.println(JenaEngine.executeQuery(inferedModel, query));
