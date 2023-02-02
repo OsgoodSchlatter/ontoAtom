@@ -698,6 +698,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#gaz_rares">
         <rdf:type rdf:resource="http://www.semanticweb.org/louis/ontologies/2023/0/untitled-ontology-10#Famille_element"/>
+        <untitled-ontology-10:nom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gaz_rares</untitled-ontology-10:nom>
     </owl:NamedIndividual>
     
 
